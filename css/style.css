@@ -1,0 +1,431 @@
+
+*{
+	box-sizing: border-box;
+}
+html{
+	scroll-behavior: smooth;
+}
+body{
+	font-family: Roboto;
+	background-color: #F2F2F2;
+
+}
+h1, h3{
+	font-family: Lora;
+	letter-spacing: 2px;
+}
+
+h2{
+	font-family: Lora;
+	font-size: 24px;
+	text-transform: capitalize;
+	color: #2A2A2A;
+
+}
+
+/*Header*/
+	/*Frame hero-images*/
+	.bordertop{
+		width: 100%;
+		height: 20px;
+		background: #F2F2F2;
+		position: absolute;
+		top: 0;
+	}
+	.borderleft{
+		width: 20px;
+		height: 100%;
+		background: #F2F2F2;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+	.borderright{
+		width: 20px;
+		height: 100%;
+		background: #F2F2F2;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	/*Frame hero-images*/
+
+header .box img{
+	position: absolute;
+	right: 115px;
+	bottom: 30px;
+}
+header .mouse{
+	position: fixed;
+	left: 50%;
+	bottom: 30px;
+	cursor: pointer;
+	opacity: 0.9;
+
+}
+header small{
+	font-size: 12px;
+	letter-spacing: 0.9px;
+	position: fixed;
+	left: -38px;
+	bottom: 130px;
+	transform: rotate(90deg);
+	z-index: 4;
+	color: #2A2A2A;
+}
+header nav{
+	background-color: transparent;
+	position: relative;
+	z-index: 9;
+}
+header nav .container-nav{
+	position: fixed;
+	bottom: 43%;
+	right: -200px;
+	transform: rotate(90deg);
+	z-index: 9;
+}
+header nav .icon{
+	margin-right: 30px;
+}
+header nav .icon a{
+	color: black;
+}
+header nav .icon span {
+	margin-right: 10px;
+}
+header .nav a{
+	color: #2A2A2A;
+	padding-right: 25px;
+	text-decoration: none;
+}
+
+header .nav .cool-link::after{
+	content: "";
+	display: block;
+	width: 0;
+	height: 2px;
+	background: black;
+	transition: width .3s;
+
+}
+header .nav .active-nav::after{
+	content: "";
+	display: block;
+	width: 100%;
+	height: 2px;
+	background: black;
+	transition: width .3s;
+
+}
+header .nav .cool-link:hover::after{
+	width: 100%;
+	transition: width .3s;
+
+}
+header .nav a:last-child{
+	position: relative;
+	background-color: #FFC94B;
+	padding: 0 10px 0 10px;
+	border-radius: 10%;
+}
+header .nav span{
+	position: absolute;
+	top: -8px;
+	bottom: 0;
+	color: red;
+}
+header #check{
+	display: none;
+}
+/*About-logo*/
+header .logo{
+	display: none;
+}
+
+	/*Mobile Version*/
+	@media (max-width: 580px){
+		.container-banner, .container-heroimg{
+			display: none;
+		}
+		header .logo{
+			display: block;
+
+		}
+		header #check{
+			display: none !important;
+		}
+		nav .container-header{
+			position: relative;
+			height: 60px;
+			width: 100%;
+		}
+		nav .box{
+			position: fixed;
+			background: white;
+			width: 100%;
+			height: 60px;
+			padding: 10px 0 20px 0;
+			z-index: 10;
+		}
+		nav img{
+			position: absolute;
+			top: 10px;
+			left: 0;
+			width: 150px;
+		}
+		nav span.btn-burger{
+			position: fixed;
+			right: 15px;
+			top: 20px;
+			z-index: 10;
+			cursor: pointer;
+		}
+		header nav .icon{
+			display: none;
+		}
+		header nav .container-nav{
+			position: fixed;
+			background-color: white;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			left: 250%;
+			transform: rotate(0);
+			transition: 0.3s linear;
+		}
+		header nav .container-nav .nav{
+			display:block;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			text-align: center;
+		}
+		header nav .container-nav .nav span{
+			top: -7px;
+			right: -5px;
+		}
+		header nav .nav a{
+			display: block;
+			padding-right: 0 !important;
+			padding-bottom: 20px;
+			font-size: 30px;
+		}
+		#check:checked ~ .container-nav{
+			left: 0;
+		}
+
+		/*About*/
+		section#about{
+			margin: 80px 0 35px 0 !important;
+		}
+		section#team .figure{
+			width: 200px;
+			height: 340px !important;
+			overflow: hidden;
+		}
+
+		section#hero-banner .portfoliosDetail{
+			height: 100vh !important;
+			width: 100%;
+		}
+	}
+	/*Mobile Version*/
+
+/*##### News #####*/
+/*##### News #####*/
+
+/*##### Content #####*/
+
+#content .figure-img{
+	position: relative;
+}
+#content .container-figureimg {
+	width: 100%;
+	height: 350px;
+}
+#content .container-figureimg img{
+	width: 900px;
+	height: 100%;
+	object-fit: cover;
+}
+#content .figure-img a{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	opacity: 0;
+	transition: opacity 0.3s;
+	z-index: 1;
+}
+#content .figure-img a:hover{
+	opacity: 1;
+}
+#content .figure-img .container-blogo{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	filter: grayscale(100%);
+	background-color: rgba(0, 0, 0, 0.4);
+}
+#content p{
+	font-size: 14px;
+}
+
+/*##### Content #####*/
+
+/*##### AboutUs #####*/
+section#about{
+	margin: 140px 0 150px 0;
+}
+#hero-banner img{
+	width: 100%;
+}
+	/*Motiv*/
+	section#motiv p{
+		font-family: lora;
+		font-size: 26px;
+		font-weight: 500;
+	}
+	/*Motiv*/
+
+	/*Team*/
+	section#team .figure{
+		width: 200px;
+		height: 250px;
+		overflow: hidden;
+	}
+	#team .figure img{
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		transition: 0.3s linear;
+	}
+	#team .figure img:hover{
+		transform: scale(1.1);
+	}
+	/*Team*/
+/*##### AboutUs #####*/
+
+/*##### Portfolios #####*/
+	/*Original Project*/
+	section#portfolios .container-thumbnail{
+		width: 100%;
+		height: 250px;
+		overflow: hidden;
+		position: relative;
+	}
+	section#portfolios .container-thumbnail img{
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		transition: 0.3s linear;
+	}
+	section#portfolios .container-thumbnail img:hover{
+		transform: scale(1.1);
+		background: rgba(0, 0, 0, .6);	
+		-webkit-filter: grayscale(55%);
+		cursor: pointer;
+
+	}
+	/*Original Project*/
+/*##### Portfolios #####*/
+
+/*##### Contact #####*/
+	/*Hero Banner*/
+	section#hero-banner .container-heroBanner{
+		position: relative;
+		width: 100%;
+		height: 450px;
+		top: -30px;
+	}
+	section#hero-banner .container-heroBanner img{
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+	/*Hero Banner*/
+
+	/*Contact*/
+	section#contact form button{
+		background-color: #FFC94B !important;
+		color: #1D1D1D !important;
+		border-radius: 50px;
+	}
+	/*Contact*/
+
+	/*Gmaps*/
+	section#gmaps .container-gmaps{
+		width: 100%;
+		height: 430px;
+		margin: 120px 0 70px 0;
+	}
+	section#gmaps .container-gmaps iframe{
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+	/*Gmaps*/
+/*##### Contact #####*/
+
+
+/*##### Portfolios Detail #####*/
+	/*Hero Banner*/
+	section#hero-banner h1{
+		position: absolute;
+		text-transform: capitalize;
+		letter-spacing: 4px;
+		color: white;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		
+	}
+	/*Hero Banner*/
+
+	/*Iframe Info*/
+	section#thumbnail .container-iframe{
+		width: 100%;
+		height: 400px;
+	}
+	section#thumbnail .container-iframe iframe{
+		width: 100%;
+		height: 100%;
+
+	}
+	/*Iframe Info*/
+/*##### Portfolios Detail #####*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*##### Footer #####*/
+
+footer a{
+	border-radius: 50px !important;
+}
+footer a:hover{
+	background-color: #FFC94B !important;
+	color: #1D1D1D !important;
+	border: none;
+	transition: 0.2s;
+}
