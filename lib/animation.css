@@ -240,7 +240,7 @@ header .hero-banner1 img, header .hero-banner2 img, header .hero-banner3 img, he
   align-items: center;
   transition: all 0.2s;
 }
-.animated-arrow > .main > .text {
+.animated-arrow > .main > .text  {
   margin: 0 13px -4px 0;
   line-height: 1;
 }
