@@ -1,4 +1,10 @@
 # panduratfilm
+
 Production of film series, documentaries, digital content, and creative services for visual storytelling needs.
 
-up to date
+- aris
+  -> foto, tambahan member
+  -> project
+  -> kantor
+  -> alamat kantor
+  -> foto project
