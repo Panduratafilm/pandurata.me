@@ -1,119 +1,121 @@
-
-header .container-heroimg{
-	/*height: 668px;*/
-	height: 645px;
-	position: relative;
-	overflow: hidden;
+header .container-heroimg {
+  /*height: 668px;*/
+  height: 645px;
+  position: relative;
+  overflow: hidden;
 }
-header .hero-banner1, .hero-banner2, .hero-banner3, .hero-banner4 {
-	height: 100%;
-	width: 100%;
+header .hero-banner1,
+.hero-banner2,
+.hero-banner3,
+.hero-banner4 {
+  height: 100%;
+  width: 100%;
 }
-@keyframes zoom-in{
-	100%{
-		width: 120%;
-	}
+@keyframes zoom-in {
+  100% {
+    width: 120%;
+  }
 }
-.hero-banner1{
-	animation: slide1 20s linear infinite;
+.hero-banner1 {
+  animation: slide1 20s linear infinite;
 }
-.hero-banner2{
-	animation: slide2 20s linear infinite;
+.hero-banner2 {
+  animation: slide2 20s linear infinite;
 }
-.hero-banner3{
-	animation: slide3 20s linear infinite;
+.hero-banner3 {
+  animation: slide3 20s linear infinite;
 }
-.hero-banner4{
-	animation: slide4 20s linear infinite;
+.hero-banner4 {
+  animation: slide4 20s linear infinite;
 }
-@keyframes slide1{
-	0%{
-		visibility: visible;
-	}
-	25%{
-		visibility: hidden;
-	}
-	50%{
-		visibility: hidden;
-	}
-	75%{
-		visibility: hidden;
-	}
-	100%{
-		visibility: visible;
-	}
+@keyframes slide1 {
+  0% {
+    visibility: visible;
+  }
+  25% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  75% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
 }
-@keyframes slide2{
-	0%{
-		visibility: hidden;
-	}
-	25%{
-		visibility: hidden;
-	}
-	50%{
-		visibility: visible;
-	}
-	75%{
-		visibility: hidden;
-	}
-	100%{
-		visibility: hidden;
-	}
+@keyframes slide2 {
+  0% {
+    visibility: hidden;
+  }
+  25% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: visible;
+  }
+  75% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: hidden;
+  }
 }
-@keyframes slide3{
-	0%{
-		visibility: hidden;
-	}
-	25%{
-		visibility: hidden;
-	}
-	50%{
-		visibility: hidden;
-	}
-	75%{
-		visibility: visible;
-	}
-	100%{
-		visibility: hidden;
-	}
+@keyframes slide3 {
+  0% {
+    visibility: hidden;
+  }
+  25% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  75% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
 }
-@keyframes slide4{
-	0%{
-		visibility: hidden;
-	}
-	25%{
-		visibility: hidden;
-	}
-	50%{
-		visibility: hidden;
-	}
-	75%{
-		visibility: hidden;
-	}
-	100%{
-		visibility: visible;
-	}
-}
-
-header .hero-banner1 img, header .hero-banner2 img, header .hero-banner3 img, header .hero-banner4  img{
-	width: 100%;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	animation: zoom-in 10s linear infinite;
-
+@keyframes slide4 {
+  0% {
+    visibility: hidden;
+  }
+  25% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  75% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
 }
 
+header .hero-banner1 img,
+header .hero-banner2 img,
+header .hero-banner3 img,
+header .hero-banner4 img {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: zoom-in 10s linear infinite;
+}
 
 /*arrow*/
 .containers {
- margin-left: -40px;
- margin-top: 20px;
-
+  margin-left: -40px;
+  margin-top: 20px;
 }
 .containers ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 .containers ul li {
   margin: 0 0 24px;
@@ -132,7 +134,8 @@ header .hero-banner1 img, header .hero-banner2 img, header .hero-banner3 img, he
   width: 0;
   background-color: #4c4c4c;
 }
-.the-arrow.-left > .shaft:before, .the-arrow.-left > .shaft:after {
+.the-arrow.-left > .shaft:before,
+.the-arrow.-left > .shaft:after {
   width: 0;
   background-color: #4c4c4c;
 }
@@ -149,7 +152,8 @@ header .hero-banner1 img, header .hero-banner2 img, header .hero-banner3 img, he
   width: 1px;
   transition-delay: 0.2s;
 }
-.the-arrow.-right > .shaft:before, .the-arrow.-right > .shaft:after {
+.the-arrow.-right > .shaft:before,
+.the-arrow.-right > .shaft:after {
   width: 8px;
   transition-delay: 0.3s;
   transition: all 0.5s;
@@ -169,7 +173,8 @@ header .hero-banner1 img, header .hero-banner2 img, header .hero-banner3 img, he
   transition-delay: 0;
   will-change: transform;
 }
-.the-arrow > .shaft:before, .the-arrow > .shaft:after {
+.the-arrow > .shaft:before,
+.the-arrow > .shaft:after {
   background-color: #4c4c4c;
   content: "";
   display: block;
@@ -204,7 +209,8 @@ header .hero-banner1 img, header .hero-banner2 img, header .hero-banner3 img, he
   transition-delay: 0.1s;
   background-color: #808080;
 }
-.animated-arrow:hover > .the-arrow.-left > .shaft:before, .animated-arrow:hover > .the-arrow.-left > .shaft:after {
+.animated-arrow:hover > .the-arrow.-left > .shaft:before,
+.animated-arrow:hover > .the-arrow.-left > .shaft:after {
   width: 8px;
   transition-delay: 0.1s;
   background-color: #808080;
@@ -224,7 +230,8 @@ header .hero-banner1 img, header .hero-banner2 img, header .hero-banner3 img, he
   transform: translateX(200%);
   transition-delay: 0;
 }
-.animated-arrow:hover > .main > .the-arrow.-right > .shaft:before, .animated-arrow:hover > .main > .the-arrow.-right > .shaft:after {
+.animated-arrow:hover > .main > .the-arrow.-right > .shaft:before,
+.animated-arrow:hover > .main > .the-arrow.-right > .shaft:after {
   width: 0;
   transition-delay: 0;
   transition: all 0.1s;
@@ -240,7 +247,7 @@ header .hero-banner1 img, header .hero-banner2 img, header .hero-banner3 img, he
   align-items: center;
   transition: all 0.2s;
 }
-.animated-arrow > .main > .text  {
+.animated-arrow > .main > .text {
   margin: 0 13px -4px 0;
   line-height: 1;
 }
@@ -248,3 +255,15 @@ header .hero-banner1 img, header .hero-banner2 img, header .hero-banner3 img, he
   position: relative;
 }
 /*arrow*/
+
+/* zoom */
+.zoom {
+  transition: transform 0.4s; /* Animation */
+}
+
+.zoom:hover {
+  cursor: pointer;
+  transform: scale(
+    1.05
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
