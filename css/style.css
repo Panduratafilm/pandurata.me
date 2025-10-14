@@ -389,6 +389,16 @@ section#thumbnail .container-iframe iframe {
   height: 100%;
 }
 /*Iframe Info*/
+
+/* ################## blog ########### */
+.content-blog {
+  display: inline-block;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  overflow: hidden;
+}
 /*##### Portfolios Detail #####*/
 
 /*##### Footer #####*/
