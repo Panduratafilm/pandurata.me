@@ -274,17 +274,17 @@ header .logo {
 /*##### Content #####*/
 /* #### Our Clienet ##### */
 
-.col img {
+.col .logo-clients {
   filter: grayscale(1) invert(1);
   cursor: pointer;
 }
 
-.client img:hover {
+.client .logo-clients:hover {
   opacity: 0.7;
 }
 
 @media only screen and (max-width: 600px) {
-  .client img {
+  .client img .logo-clients {
     width: 120%;
     max-width: 400px;
     height: auto;
