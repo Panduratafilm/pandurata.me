@@ -284,7 +284,7 @@ header .logo {
 }
 
 @media only screen and (max-width: 600px) {
-  .client img .logo-clients {
+  .client .logo-clients {
     width: 120%;
     max-width: 400px;
     height: auto;
