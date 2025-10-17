@@ -274,13 +274,14 @@ header .logo {
 /*##### Content #####*/
 /* #### Our Clienet ##### */
 
-.col .logo-clients {
-  filter: grayscale(1) invert(1);
+.logo-clients {
   cursor: pointer;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
 }
 
 .client .logo-clients:hover {
-  opacity: 0.7;
+  filter: grayscale(0%);
 }
 
 @media only screen and (max-width: 600px) {
