@@ -322,6 +322,13 @@ section#team .figure {
 #team .figure img:hover {
   transform: scale(1.1);
 }
+.aside-campaign a {
+  text-decoration: none;
+  color: black;
+}
+.aside-campaign a:hover {
+  text-decoration: underline;
+}
 /*Team*/
 /*##### AboutUs #####*/
 
